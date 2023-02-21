@@ -1,0 +1,12 @@
+/** @format */
+
+.faculty {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.faculty_container {
+	display: flex;
+	width: 90%;
+	margin: 10rem 0rem;
+}

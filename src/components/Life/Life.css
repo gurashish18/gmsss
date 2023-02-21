@@ -1,0 +1,31 @@
+/** @format */
+
+.life-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	margin-top: 10rem;
+}
+.life-heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
+}
+.life-heading h1 {
+	font-size: 2.5rem;
+	font-weight: 800;
+	color: #1a1a1d;
+}
+.life-heading h4 {
+	font-size: 2rem;
+	font-weight: 400;
+	color: #c3073f;
+}
+.life-content {
+	margin-top: 20px;
+	display: flex;
+	flex: 1;
+}

@@ -1,0 +1,14 @@
+/** @format */
+
+.home_container {
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.home_container3 {
+	background-color: #c3073f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
