@@ -7,6 +7,7 @@ import "./Home.css";
 import HeroSection from "../../components/HeroSection/HeroSection";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import ContactForm from "../../components/ContactForm/ContactForm";
+import FromPrincipal from "../../components/FromPrincipal/FromPrincipal";
 
 function Home() {
 	return (
@@ -16,6 +17,9 @@ function Home() {
 			</div>
 			<div className="home_container">
 				<About />
+			</div>
+			<div className="home_container">
+				<FromPrincipal />
 			</div>
 			<div className="home_container">
 				<Life />

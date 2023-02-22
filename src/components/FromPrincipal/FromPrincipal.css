@@ -1,0 +1,117 @@
+/** @format */
+
+.principal_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	margin-top: 10rem;
+}
+.principal-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 0.5;
+}
+.principal-content h1 {
+	font-size: 2.5rem;
+	font-weight: 800;
+}
+.principal-content h4 {
+	font-size: 2rem;
+	font-weight: 400;
+	color: #c3073f;
+}
+.principal-content p {
+	text-align: justify;
+	color: #ffffff;
+	margin-top: 20px;
+	font-weight: 1rem;
+}
+.principal-image {
+	display: flex;
+	flex: 0.5;
+}
+.principal-image img {
+	width: 100%;
+	margin-left: 1rem;
+}
+
+@media only screen and (max-width: 1400px) {
+	.principal-image img {
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.principal-image img {
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.principal_container {
+		width: 100%;
+		margin-top: 5rem;
+		flex-direction: column-reverse;
+		padding: 1rem;
+	}
+	.principal-content {
+		flex: 1;
+		text-align: center;
+	}
+	.principal-image {
+		flex: 1;
+	}
+	.principal-image img {
+		margin-left: 0rem;
+		margin-bottom: 1rem;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.principal-image img {
+	}
+}
+
+blockquote.q-card-color-1 {
+	--accent-color: rgb(32 32 54);
+	--bg-color: #c3073f;
+	--dot-color: rgb(255 255 255 / 0.35);
+	--text-color: rgb(243 243 243);
+	--text-color-author: rgb(243 243 243);
+}
+blockquote.q-card {
+	--padding: 1rem;
+	padding: var(--padding);
+	color: var(--text-color, black);
+	font-weight: 600;
+	background-color: var(--bg-color, white);
+	display: grid;
+	gap: 1rem;
+	background-image: radial-gradient(
+		circle,
+		var(--dot-color, rgb(0 0 0 / 0.125)) calc(25% - 1px),
+		transparent 25%
+	);
+	background-size: 0.5rem 0.5rem;
+	border-radius: 0.25rem;
+	box-shadow: 0.5rem 0.5rem 2rem rgb(0 0 0 / 0.5);
+}
+blockquote.q-card::before {
+	--qHeight: 4rem;
+	content: "";
+	margin-left: calc(var(--padding) * -1);
+	margin-top: calc(var(--padding) * -1);
+	height: var(--qHeight);
+	width: calc(var(--qHeight) * 1.1);
+	background-image: radial-gradient(
+			circle at bottom right,
+			transparent calc(var(--qHeight) / 4 - 1px),
+			var(--accent-color, black) calc(var(--qHeight) / 4)
+				calc(var(--qHeight) / 2),
+			transparent calc(var(--qHeight) / 2 + 1px)
+		),
+		linear-gradient(var(--accent-color, black), var(--accent-color, black));
+	background-size: calc(var(--qHeight) / 2) calc(var(--qHeight) / 2);
+	background-position: top left, bottom left;
+	background-repeat: space no-repeat;
+}

@@ -1,18 +1,21 @@
 /** @format */
 
 import React from "react";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import FacultyCard from "../../components/FacultyCard/FacultyCard";
 import "./Faculty.css";
-import { faculties } from "./FacultyData.js";
+import Team from "../../components/Team/Team";
 
 function Faculty() {
 	return (
 		<>
+			<header className="faculty_header">
+				<div class="overlay">
+					<h1>OUR TEAM</h1>
+				</div>
+			</header>
 			<div className="faculty">
 				<div className="faculty_container">
-					<Box sx={{ flexGrow: 1 }}>
+					<Team />
+					{/* <Box sx={{ flexGrow: 1 }}>
 						<Grid
 							container
 							spacing={{ xs: 3, sm: 3, md: 3 }}
@@ -35,7 +38,7 @@ function Faculty() {
 								</Grid>
 							))}
 						</Grid>
-					</Box>
+					</Box> */}
 				</div>
 			</div>
 		</>
