@@ -6,9 +6,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import img1 from "../../assets/img1.jpeg";
 import img2 from "../../assets/img2.jpeg";
-import img3 from "../../assets/img3.jpeg";
 import img5 from "../../assets/img5.jpeg";
 import school from "../../assets/school.jpeg";
+import slide1 from "../../assets/slide1.jpeg";
 
 function Slideshow() {
 	return (
@@ -25,7 +25,7 @@ function Slideshow() {
 				<img src={school} height={"700px"} alt="img2" />
 			</div>
 			<div>
-				<img src={img3} height={"700px"} alt="img3" />
+				<img src={slide1} height={"700px"} alt="img3" />
 			</div>
 			<div>
 				<img src={img5} height={"700px"} alt="img4" />

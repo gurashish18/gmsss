@@ -2,9 +2,7 @@
 
 import React from "react";
 import "./HeroSection.css";
-import video from "../../assets/videos/video.mp4";
 import { Button } from "../Button/Button";
-import Slideshow from "../Slideshow/Slideshow";
 
 function HeroSection() {
 	return (

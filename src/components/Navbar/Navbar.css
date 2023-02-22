@@ -21,14 +21,14 @@
 }
 
 .navbar-logo {
-	color: #c3073f;
+	/* color: #c3073f;
 	justify-self: start;
 	margin-left: 20px;
 	cursor: pointer;
 	text-decoration: none;
 	font-size: 2rem;
 	display: flex;
-	align-items: center;
+	align-items: center; */
 }
 
 .fa-typo3 {
@@ -112,6 +112,7 @@
 		padding: 2rem;
 		width: 100%;
 		display: table;
+		font-size: 1.2rem;
 	}
 
 	.nav-links:hover {
@@ -121,10 +122,10 @@
 	}
 
 	.navbar-logo {
-		position: absolute;
+		/* position: absolute;
 		top: 0;
 		left: 0;
-		transform: translate(25%, 50%);
+		transform: translate(25%, 50%); */
 	}
 
 	.menu-icon {

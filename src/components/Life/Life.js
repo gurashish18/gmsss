@@ -79,7 +79,7 @@ function Life() {
 				</div>
 				<div className="life-content">
 					<Box>
-						<ImageList variant="masonry" cols={3} gap={8}>
+						<ImageList variant="masonry" cols={2} gap={8}>
 							{itemData.map((item) => (
 								<ImageListItem key={item.img}>
 									<img

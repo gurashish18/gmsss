@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import "./ContactForm.css";
-import { Typewriter } from "react-simple-typewriter";
 
 function ContactForm() {
 	const [formStatus, setFormStatus] = useState("Send");
@@ -57,13 +56,7 @@ function ContactForm() {
 					</form>
 				</div>
 				<div className="contact_form_heading">
-					<Typewriter
-						words={["Have a question?", "Have any suggestion?"]}
-						loop={false}
-						typeSpeed={120}
-						deleteSpeed={70}
-						delaySpeed={1000}
-					/>
+					<h1>Have a question?</h1>
 					<h4>Ask out.</h4>
 				</div>
 			</div>

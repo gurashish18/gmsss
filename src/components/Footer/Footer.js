@@ -3,119 +3,95 @@
 import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
-import { Button } from "../Button/Button";
+import logo from "../../assets/logo.png";
+import { HiLocationMarker } from "react-icons/hi";
+import { AiFillMail } from "react-icons/ai";
+import { IoTime } from "react-icons/io5";
 
 function Footer() {
 	return (
-		<div className="footer-container">
-			<section className="footer-subscription">
-				<p className="footer-subscription-heading">
-					Join the Adventure newsletter to receive our best vacation deals
-				</p>
-				<p className="footer-subscription-text">
-					You can unsubscribe at any time.
-				</p>
-				<div className="input-areas">
-					<form>
-						<input
-							className="footer-input"
-							name="email"
-							type="email"
-							placeholder="Your Email"
-						/>
-						<Button buttonStyle="btn--outline">Subscribe</Button>
-					</form>
-				</div>
-			</section>
-			<div class="footer-links">
-				<div className="footer-link-wrapper">
-					<div class="footer-link-items">
-						<h2>About Us</h2>
-						<Link to="/sign-up">How it works</Link>
-						<Link to="/">Testimonials</Link>
-						<Link to="/">Careers</Link>
-						<Link to="/">Investors</Link>
-						<Link to="/">Terms of Service</Link>
+		<>
+			<div className="footer_container">
+				<div className="footer_top">
+					<div className="footer_logo">
+						<img src={logo} alt="logo" width={120} />
 					</div>
-					<div class="footer-link-items">
-						<h2>Contact Us</h2>
-						<Link to="/">Contact</Link>
-						<Link to="/">Support</Link>
-						<Link to="/">Destinations</Link>
-						<Link to="/">Sponsorships</Link>
+					<div className="footer_info">
+						<div className="footer_info_item">
+							<HiLocationMarker fontSize={25} />
+							<p>
+								GSSS POLICELINE, Kalka Chowk Bus Stop, NH-65, Palika Vihar,
+								Ambala City, Haryana, India
+							</p>
+						</div>
+						<div className="footer_info_item">
+							<AiFillMail fontSize={25} />
+							<p>ggssspoliceline12@gmail.com</p>
+						</div>
+						<div className="footer_info_item">
+							<IoTime fontSize={25} />
+							<p>8:00am to 2:30pm Mon-Sat</p>
+						</div>
 					</div>
 				</div>
-				<div className="footer-link-wrapper">
-					<div class="footer-link-items">
-						<h2>Videos</h2>
-						<Link to="/">Submit Video</Link>
-						<Link to="/">Ambassadors</Link>
-						<Link to="/">Agency</Link>
-						<Link to="/">Influencer</Link>
-					</div>
-					<div class="footer-link-items">
-						<h2>Social Media</h2>
-						<Link to="/">Instagram</Link>
-						<Link to="/">Facebook</Link>
-						<Link to="/">Youtube</Link>
-						<Link to="/">Twitter</Link>
-					</div>
+				<div className="footer_bottom">
+					<small class="website-rights">GMSSS School © 2023</small>{" "}
+					<small className="website-rights">
+						Design and Developed by{" "}
+						<a href="https://github.com/gurashish18" target={"_blank"}>
+							Me{" "}
+						</a>{" "}
+					</small>
 				</div>
 			</div>
-			<section class="social-media">
-				<div class="social-media-wrap">
-					<div class="footer-logo">
-						<Link to="/" className="social-logo">
-							TRVL
-							<i class="fab fa-typo3" />
-						</Link>
-					</div>
-					<small class="website-rights">TRVL © 2020</small>
-					<div class="social-icons">
-						<Link
-							class="social-icon-link facebook"
-							to="/"
-							target="_blank"
-							aria-label="Facebook"
-						>
-							<i class="fab fa-facebook-f" />
-						</Link>
-						<Link
-							class="social-icon-link instagram"
-							to="/"
-							target="_blank"
-							aria-label="Instagram"
-						>
-							<i class="fab fa-instagram" />
-						</Link>
-						<Link
-							class="social-icon-link youtube"
-							to="/"
-							target="_blank"
-							aria-label="Youtube"
-						>
-							<i class="fab fa-youtube" />
-						</Link>
-						<Link
-							class="social-icon-link twitter"
-							to="/"
-							target="_blank"
-							aria-label="Twitter"
-						>
-							<i class="fab fa-twitter" />
-						</Link>
-						<Link
-							class="social-icon-link twitter"
-							to="/"
-							target="_blank"
-							aria-label="LinkedIn"
-						>
-							<i class="fab fa-linkedin" />
-						</Link>
-					</div>
-				</div>
-			</section>
-		</div>
+		</>
+		// <div className="footer-container">
+		// 	<div class="footer-links">
+		// 		<div className="footer-link-wrapper">
+		// 			<div class="footer-link-items">
+		// 				<Link to="/">
+		// 					<img src={logo} width={250} alt="logo" />
+		// 				</Link>
+		// 			</div>
+		// 			<div class="footer-link-items">
+		// 				<div className="footer-link-item">
+		// 					<HiLocationMarker
+		// 						style={{
+		// 							fontSize: "3rem",
+		// 							marginRight: "0.5rem",
+		// 							color: "#c3073f",
+		// 						}}
+		// 					/>
+		// 					<p>
+		// 						GSSS POLICELINE, Kalka Chowk Bus Stop, NH-65, Palika Vihar,
+		// 						Ambala City, Haryana, India
+		// 					</p>
+		// 				</div>
+		// 				<div className="footer-link-item">
+		// 					<AiFillMail
+		// 						style={{
+		// 							fontSize: "2.5rem",
+		// 							marginRight: "0.5rem",
+		// 							color: "#c3073f",
+		// 						}}
+		// 					/>
+		// 					<p>ggssspoliceline12@gmail.com</p>
+		// 				</div>
+		// 			</div>
+		// 		</div>
+		// 	</div>
+		// 	<section class="social-media">
+		// 		<div class="social-media-wrap">
+		// 			<small class="website-rights">GMSSS School © 2023</small>
+		// 			<small className="website-rights">
+		// 				Design and Developed by{" "}
+		// 				<a href="https://github.com/gurashish18" target={"_blank"}>
+		// 					Me
+		// 				</a>
+		// 			</small>
+		// 		</div>
+		// 	</section>
+		// </div>
 	);
 }
 

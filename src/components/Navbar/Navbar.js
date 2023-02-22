@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { FaTimes, FaBars } from "react-icons/fa";
+import logo from "../../assets/logo.png";
 
 function Navbar() {
 	const [click, setClick] = useState(false);
@@ -31,7 +32,9 @@ function Navbar() {
 		<>
 			<nav className="navbar">
 				<div className="navbar-container">
-					<Link to="/" className="navbar-logo" onClick={closeMobileMenu}></Link>
+					<Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+						<img src={logo} style={{ height: "60px" }} />
+					</Link>
 					<div className="menu-icon" onClick={handleClick}>
 						{click ? (
 							<FaTimes className="fas fa-times" />
