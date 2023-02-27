@@ -8,12 +8,13 @@ import HeroSection from "../../components/HeroSection/HeroSection";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import FromPrincipal from "../../components/FromPrincipal/FromPrincipal";
+import Slider from "../../components/Slider/Slider";
 
 function Home() {
 	return (
 		<>
 			<div className="home_container2">
-				<Slideshow />
+				<Slider />
 			</div>
 			<div className="home_container">
 				<About />
